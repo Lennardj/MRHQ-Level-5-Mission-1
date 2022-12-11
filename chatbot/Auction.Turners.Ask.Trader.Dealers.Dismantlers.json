@@ -1,0 +1,141 @@
+{
+  "id": "6feef333-bb60-4c61-89fe-33d482ae1cfc",
+  "name": "Auction.Turners.Ask.Trader.Dealers.Dismantlers",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "AuctionTurnersAsk-followup"
+  ],
+  "contexts": [
+    "AuctionTurnersAsk-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "da063a53-e2ca-4c71-bd8c-a45bbe197441",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "AuctionTurnersAsk.AuctionTurnersAsk-custom",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Sweet as!  For Registered Motor Vehicle Traders, Licensed Second-hand Dealers & Licensed Dismantlers\n\n- Log into your Turners website account  \n- Go to MY ACCOUNT\n- Click ACCOUNT DETAILS - Edit\n- Click the red 'BID ONLINE' button on the top right hand side\n- If you can't see the red button you may not be registered with us as a licensed dealer. Go to the ACCOUNT TYPE section at the bottom of the page and ensure the correct account type is selected, fill in the additional details and we will send a General Agreement to Trade form. You will need to complete this form to be registered as a dealer within our system.\n\n\nIs there anything else I can do for you??"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "da063a53-e2ca-4c71-bd8c-a45bbe197441",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I am a Registered Motor Vehicle Traders",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ad7d4a42-4847-4b20-86a9-3253f214bd54",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I am a traders",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "cc4712f2-8126-40da-8cd6-8cf7a5dd5ac1",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I trade cars",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "9ba5b812-87f8-46ca-8b13-d0b5cdc0bc5b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I own a dealership",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "efd1bbb9-a3dc-481d-aa75-b83a1f340320",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I am a Licensed Second-hand Dealers",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "c287efb9-732f-4621-a9bc-06f04af39497",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I am a Licensed Dismantlers",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "6f059a9f-c876-4a25-92be-ad3a997c8777",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I dismantle cars",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "137bc6b6-fd57-4f7b-85dc-844dbfe42c93",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "i buy and sell cars",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "9ead8fdc-6178-40db-bc54-8e83f1004660",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

@@ -1,0 +1,93 @@
+{
+  "id": "e3bc297d-5552-46d2-9d1f-d2e418381b50",
+  "name": "Auction.Turners.online.customers&companies",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "AuctionTurnersonline-followup"
+  ],
+  "contexts": [
+    "AuctionTurnersonline-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "c09c0897-308c-479b-958d-1b3f9e51fac0",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "Auction.Auction-custom.AuctionTurnersonline-custom",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Here you go!  To bid online as a Private customers & companies you need to: \n\n- Log into your Turners website account \n- Go to MY ACCOUNT\n-  Click ACCOUNT DETAILS - Edit\n- Go to the ACCOUNT TYPE section at the bottom of the page and tick the box that says BID ONLINE. Or you will see a red 'BID ONLINE' button on the top right hand side\n- You will then be prompted to enter your credit card details. To authorise your card we need to charge $1 to it, this will be credited back onto your card after a couple of days.\n\nIs there anything else I can do for you??"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "ad2ff55c-57d9-4966-aa7f-de95490f7f98",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "private customer",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "358f2c8f-d2a9-4e66-9c8b-4a7ab1093930",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I have a company",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "14eb2942-e1a1-4fa5-95c5-d86f9e22d3f3",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I am a small business owner",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "9cab85f7-b2c3-46bd-911a-a2aa62505271",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I am a customer",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "278e03c9-97a1-4eb5-9fd5-f9f4b9d297ce",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

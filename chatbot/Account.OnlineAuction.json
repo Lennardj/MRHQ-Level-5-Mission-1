@@ -1,0 +1,121 @@
+{
+  "id": "9d214fd0-051f-4277-bff8-ec40ea041d89",
+  "name": "Account.OnlineAuction",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "online-auction",
+          "dataType": "@Online-Auction",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$online-auction",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Online auctions are only held online, there is no physical auction or auctioneer. The customers are all online.\n\nIs there anything else I can do for you??"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Are ",
+          "userDefined": false
+        },
+        {
+          "text": "online auction",
+          "userDefined": false,
+          "alias": "online-auction",
+          "meta": "@Online-Auction"
+        },
+        {
+          "text": " in a physical location?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "5c4db3f1-17b6-46d9-b590-84bf3fb1e7ae",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "When are ",
+          "userDefined": false
+        },
+        {
+          "text": "online auction",
+          "userDefined": false,
+          "alias": "online-auction",
+          "meta": "@Online-Auction"
+        },
+        {
+          "text": " held?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "aa1d6ff5-e6aa-4020-88bd-a24b98605372",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What is an ",
+          "userDefined": false
+        },
+        {
+          "text": "online auction",
+          "userDefined": false,
+          "alias": "online-auction",
+          "meta": "@Online-Auction"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "918c0b5b-8b09-443d-835b-8915438def40",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

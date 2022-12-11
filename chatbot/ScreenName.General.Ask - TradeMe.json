@@ -1,0 +1,73 @@
+{
+  "id": "6639b7fb-671b-48a4-a184-7940ee461c9e",
+  "name": "ScreenName.General.Ask - TradeMe",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "ScreenNameGeneralAsk-followup"
+  ],
+  "contexts": [
+    "ScreenNameGeneralAsk-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "a9e52539-e85d-4a9e-9495-9f9d768a4048",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "ScreenNameGeneralAsk.ScreenNameGeneralAsk-custom",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "bidtype-trademeauction",
+          "dataType": "@bidType-TradeMeAuction",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$bidtype-trademeauction",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Turners Trade Me Auctions\n\nYour screen name will be your Trade Me user name, as these auctions are held in partnership with Trade Me."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "a9e52539-e85d-4a9e-9495-9f9d768a4048",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Trade me",
+          "userDefined": false,
+          "alias": "bidtype-trademeauction",
+          "meta": "@bidType-TradeMeAuction"
+        }
+      ],
+      "count": 0,
+      "id": "e913977e-afec-4bda-bf5e-56ac4d541294",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

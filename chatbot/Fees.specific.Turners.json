@@ -1,0 +1,134 @@
+{
+  "id": "952f88cd-5050-44d1-aa5a-de831afbac7d",
+  "name": "Fees.specific.Turners",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "fees-general",
+          "dataType": "@Fees-general",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$fees-general",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "bidtype-turnersauction",
+          "dataType": "@bidType-TurnersAuction",
+          "isList": true,
+          "required": false,
+          "prompts": [],
+          "value": "$bidtype-turnersauction",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Standard buyers fees will apply on top of your bid price.\n\nClick link below for buyers fees"
+          ]
+        },
+        {
+          "type": "custom_payload",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "type": "chips",
+                  "options": [
+                    {
+                      "image": {
+                        "src": {
+                          "rawUrl": "https://example.com/images/logo.png"
+                        }
+                      },
+                      "text": "Buyers Fees",
+                      "link": "https://www.turners.co.nz/Cars/how-to-buy/Buyer-and-Seller-Fees/"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What is the ",
+          "userDefined": false
+        },
+        {
+          "text": "buyers fees",
+          "userDefined": false,
+          "alias": "fees-general",
+          "meta": "@Fees-general"
+        },
+        {
+          "text": " for ",
+          "userDefined": false
+        },
+        {
+          "text": "Turners online",
+          "userDefined": false,
+          "alias": "bidtype-turnersauction",
+          "meta": "@bidType-TurnersAuction"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "auctions",
+          "userDefined": false,
+          "alias": "bidtype-turnersauction",
+          "meta": "@bidType-TurnersAuction"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e943e303-2ff9-4dbb-8ab0-2aa4686d2897",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

@@ -1,0 +1,122 @@
+{
+  "id": "412d9762-7d89-4425-a145-b194bd4e3f9f",
+  "name": "Fees.general.Ask",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "FeesgeneralAsk-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "Fees-general",
+          "dataType": "@Fees-general",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$Fees-general",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "So you have an enquiry about fees,\n\nPlease let me know if you'd like to know about Turners Trade Me online auctions Fees or Turners online auctions."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I want to know about ",
+          "userDefined": false
+        },
+        {
+          "text": "fees",
+          "userDefined": true,
+          "alias": "Fees-general",
+          "meta": "@Fees-general"
+        }
+      ],
+      "count": 0,
+      "id": "d3890883-5bcf-42f9-aa8a-ee6cd034e1cb",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Can you tell me about the ",
+          "userDefined": false
+        },
+        {
+          "text": "fees",
+          "userDefined": true,
+          "alias": "Fees-general",
+          "meta": "@Fees-general"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "dbaa4c4a-a66e-4cea-b249-7b5e318b0b46",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Are there any ",
+          "userDefined": false
+        },
+        {
+          "text": "buyers fees",
+          "userDefined": true,
+          "alias": "Fees-general",
+          "meta": "@Fees-general"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "35edc421-0be4-4413-92ff-6944fe824fb0",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

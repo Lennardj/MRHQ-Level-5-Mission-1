@@ -1,0 +1,183 @@
+{
+  "id": "c09c0897-308c-479b-958d-1b3f9e51fac0",
+  "name": "Auction.Turners.online",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "Auction-followup"
+  ],
+  "contexts": [
+    "Auction-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "ad2ff55c-57d9-4966-aa7f-de95490f7f98",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "Auction.Auction-custom",
+      "affectedContexts": [
+        {
+          "name": "AuctionTurnersonline-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "auction",
+          "dataType": "@auction",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$auction",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "auction1",
+          "dataType": "@auction",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$auction1",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "bidType-TurnersAuction",
+          "dataType": "@bidType-TurnersAuction",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$bidType-TurnersAuction",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "bidType-TurnersAuction1",
+          "dataType": "@bidType-TurnersAuction",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$bidType-TurnersAuction1",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Thanks for your response, just need one more thing for you to ensure you get the right answer. Can you please tell me if you're a Private customers & companies or Registered Motor Vehicle Traders, Licensed Second-hand Dealers & Licensed Dismantlers??"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "ad2ff55c-57d9-4966-aa7f-de95490f7f98",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "turners auction",
+          "userDefined": true,
+          "alias": "bidType-TurnersAuction1",
+          "meta": "@bidType-TurnersAuction"
+        }
+      ],
+      "count": 0,
+      "id": "087b9d16-6e49-4ce7-8d9e-5c7aa9922450",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "turners",
+          "userDefined": false,
+          "alias": "bidType-TurnersAuction",
+          "meta": "@bidType-TurnersAuction"
+        }
+      ],
+      "count": 0,
+      "id": "a2daaacf-139d-4d86-84a0-60b984d74888",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I would like to ",
+          "userDefined": false
+        },
+        {
+          "text": "bid",
+          "userDefined": false,
+          "alias": "auction",
+          "meta": "@auction"
+        },
+        {
+          "text": " on ",
+          "userDefined": false
+        },
+        {
+          "text": "Turners Online",
+          "userDefined": true,
+          "alias": "bidType-TurnersAuction",
+          "meta": "@bidType-TurnersAuction"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "Auctions",
+          "userDefined": false,
+          "alias": "auction1",
+          "meta": "@auction"
+        }
+      ],
+      "count": 0,
+      "id": "d05309fc-2d4b-409d-9f4a-0136b431ef7d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Turners Online Auctions",
+          "userDefined": true,
+          "alias": "bidType-TurnersAuction",
+          "meta": "@bidType-TurnersAuction"
+        }
+      ],
+      "count": 0,
+      "id": "9f3f383a-d89c-4690-be9c-f1a082102592",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

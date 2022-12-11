@@ -1,0 +1,143 @@
+{
+  "id": "7cb36eeb-e357-4b80-a821-a4cf651bcee2",
+  "name": "Shipping.general.ask",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "shipping-options",
+          "dataType": "@shipping-options",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$shipping-options",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Goods bought via online auctions will be available for pick up and/ or shipping at the buyers expense. Talk to your local branch about your shipping options.\n\nIs there anything else I can do for you??"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Do you have ",
+          "userDefined": false
+        },
+        {
+          "text": "freight",
+          "userDefined": true,
+          "alias": "shipping-options",
+          "meta": "@shipping-options"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "63885a98-1ad1-43ea-822d-4259beb4f055",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "How do you ",
+          "userDefined": false
+        },
+        {
+          "text": "ship",
+          "userDefined": true,
+          "alias": "shipping-options",
+          "meta": "@shipping-options"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "c23c6001-eb56-43ba-b914-a9820a947d76",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Do you have any ",
+          "userDefined": false
+        },
+        {
+          "text": "shipping options",
+          "userDefined": true,
+          "alias": "shipping-options",
+          "meta": "@shipping-options"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "09e34634-67e2-4cc5-a965-2ac0dd924867",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What ",
+          "userDefined": false
+        },
+        {
+          "text": "shipping options",
+          "userDefined": true,
+          "alias": "shipping-options",
+          "meta": "@shipping-options"
+        },
+        {
+          "text": " are there?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "42c9d954-88ac-4af6-85d0-d21390405da8",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

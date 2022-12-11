@@ -1,0 +1,68 @@
+{
+  "id": "83ff2a11-0c85-420d-87df-8edfd02d95a8",
+  "name": "Good.general.ask",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Please use the QUESTIONS & ANSWERS tab at the bottom of the listing. You need to be logged into your account to ask a question.\n\nSee Image!\n\nIs there anything else I can do for you??"
+          ]
+        },
+        {
+          "type": "custom_payload",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "type": "image",
+                  "accessibilityText": "How to Image",
+                  "rawUrl": "/goods.jpg"
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "How do I ask a question about a good?",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "0b7e5c90-c906-4e8b-8162-ed8220f752d4",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

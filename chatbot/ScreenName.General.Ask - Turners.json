@@ -1,0 +1,97 @@
+{
+  "id": "a05efcff-6539-4c18-9e55-8b6b25410687",
+  "name": "ScreenName.General.Ask - Turners",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "ScreenNameGeneralAsk-followup"
+  ],
+  "contexts": [
+    "ScreenNameGeneralAsk-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "a9e52539-e85d-4a9e-9495-9f9d768a4048",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "ScreenNameGeneralAsk.ScreenNameGeneralAsk-custom",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "bidType-TurnersAuction",
+          "dataType": "@bidType-TurnersAuction",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$bidType-TurnersAuction",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Turners Online Auctions \n\nIf you don't have a screen name your Turners website account name will be displayed. You can set your screen name by clicking the link below.\n\nFor Damaged and End of Life Cars the identity of the other bidders is kept completely private."
+          ]
+        },
+        {
+          "type": "custom_payload",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "type": "chips",
+                  "options": [
+                    {
+                      "text": "Set Screen Name",
+                      "image": {
+                        "src": {
+                          "rawUrl": "https://example.com/images/logo.png"
+                        }
+                      },
+                      "link": "https://www.turners.co.nz/FAQs-Cars/~/link/5846ea9416e44becb140491d068e82e0.aspx"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "a9e52539-e85d-4a9e-9495-9f9d768a4048",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Turners",
+          "userDefined": false,
+          "alias": "bidType-TurnersAuction",
+          "meta": "@bidType-TurnersAuction"
+        }
+      ],
+      "count": 0,
+      "id": "4a520822-bd67-434e-a171-b4def195c567",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

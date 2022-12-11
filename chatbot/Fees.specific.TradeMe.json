@@ -1,0 +1,77 @@
+{
+  "id": "4873c473-036e-4151-966b-b77dd3a0aa6e",
+  "name": "Fees.specific.TradeMe",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "fees-general",
+          "dataType": "@Fees-general",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$fees-general",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Turners Trade Me online auctions\n\nThere are no additional buyers fees. What you bid, is what you pay.\n\nIs there anything else I can do for you??"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What is ",
+          "userDefined": false
+        },
+        {
+          "text": "Trade Me buyers fees",
+          "userDefined": false,
+          "alias": "fees-general",
+          "meta": "@Fees-general"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "966f1e12-d554-4610-8541-842d76ce3761",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

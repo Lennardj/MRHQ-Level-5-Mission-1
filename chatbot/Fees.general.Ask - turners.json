@@ -1,0 +1,125 @@
+{
+  "id": "ccfbe8e4-396f-4de4-9fa9-f6d8efd1aa5d",
+  "name": "Fees.general.Ask - turners",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "FeesgeneralAsk-followup"
+  ],
+  "contexts": [
+    "FeesgeneralAsk-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "412d9762-7d89-4425-a145-b194bd4e3f9f",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "FeesgeneralAsk.FeesgeneralAsk-custom",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "Online-Auction",
+          "dataType": "@Online-Auction",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$Online-Auction",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Standard buyers fees will apply on top of your bid price. \n\nClick link below for buyers fees"
+          ]
+        },
+        {
+          "type": "custom_payload",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "type": "chips",
+                  "options": [
+                    {
+                      "link": "https://www.turners.co.nz/Cars/how-to-buy/Buyer-and-Seller-Fees/",
+                      "image": {
+                        "src": {
+                          "rawUrl": "https://example.com/images/logo.png"
+                        }
+                      },
+                      "text": "Buyers Fees"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "412d9762-7d89-4425-a145-b194bd4e3f9f",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "turners online",
+          "userDefined": true,
+          "alias": "Online-Auction",
+          "meta": "@Online-Auction"
+        }
+      ],
+      "count": 0,
+      "id": "b8b32e34-9f56-4197-a3cb-f220aaf4a9e1",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "turners online auction",
+          "userDefined": true,
+          "alias": "Online-Auction",
+          "meta": "@Online-Auction"
+        }
+      ],
+      "count": 0,
+      "id": "ee5caa73-3733-41f6-947c-eb5fa3059cb1",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "turners",
+          "userDefined": true,
+          "alias": "Online-Auction",
+          "meta": "@Online-Auction"
+        }
+      ],
+      "count": 0,
+      "id": "70f4d0b9-3f9f-4979-a424-1d2574c558a8",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

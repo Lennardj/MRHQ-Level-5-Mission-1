@@ -1,0 +1,175 @@
+{
+  "id": "9f7ab3b9-7468-4c19-84f0-11049fcf46b2",
+  "name": "Account.specific.whynot",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "accounts",
+          "dataType": "@Accounts",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$accounts",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "You can still search for and view goods in online auctions. You can even ask questions, but you can’t bid on or buy the good if it's a Turners Trade Me Auction - you can if it's a Turners Online Auction.\n\nIs there anything else I can do for you??"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "i can't link my ",
+          "userDefined": false
+        },
+        {
+          "text": "accounts",
+          "userDefined": false,
+          "alias": "accounts",
+          "meta": "@Accounts"
+        }
+      ],
+      "count": 0,
+      "id": "5cc22e7a-20e2-4f48-9386-d59b067d6632",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "no ",
+          "userDefined": false
+        },
+        {
+          "text": "turners account",
+          "userDefined": false,
+          "alias": "accounts",
+          "meta": "@Accounts"
+        }
+      ],
+      "count": 0,
+      "id": "712f91e5-8ac8-4305-8891-d5b70ff20655",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "no ",
+          "userDefined": false
+        },
+        {
+          "text": "trade me account",
+          "userDefined": false,
+          "alias": "accounts",
+          "meta": "@Accounts"
+        }
+      ],
+      "count": 0,
+      "id": "76134032-7aac-4c49-b883-ac4a494f8147",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What if I don't link my ",
+          "userDefined": false
+        },
+        {
+          "text": "accounts",
+          "userDefined": false,
+          "alias": "accounts",
+          "meta": "@Accounts"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "70d8e5a6-975b-464f-a375-93c6a56a3146",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What if I don't link my ",
+          "userDefined": false
+        },
+        {
+          "text": "Trade Me account",
+          "userDefined": false,
+          "alias": "accounts",
+          "meta": "@Accounts"
+        },
+        {
+          "text": " to Trade Me?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e5d47cdf-5475-4250-931d-2245233a4872",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What if I don't link my ",
+          "userDefined": false
+        },
+        {
+          "text": "Turners account",
+          "userDefined": false,
+          "alias": "accounts",
+          "meta": "@Accounts"
+        },
+        {
+          "text": " to Trade Me?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "27597394-3a79-43d3-9653-e85e961a7f40",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

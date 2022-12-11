@@ -1,0 +1,85 @@
+{
+  "id": "262745a0-5867-4023-bcb4-71d2c9e9c5cd",
+  "name": "Fees.general.Ask - trademe",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "FeesgeneralAsk-followup"
+  ],
+  "contexts": [
+    "FeesgeneralAsk-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "412d9762-7d89-4425-a145-b194bd4e3f9f",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "FeesgeneralAsk.FeesgeneralAsk-custom",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "fees-general",
+          "dataType": "@Fees-general",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$fees-general",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "There are no additional buyers fees. What you bid, is what you pay."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "412d9762-7d89-4425-a145-b194bd4e3f9f",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Trade me",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ca5cb00d-0a8d-4b0c-ba70-6bda6628e36e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Trade me",
+          "userDefined": false,
+          "alias": "fees-general",
+          "meta": "@Fees-general"
+        }
+      ],
+      "count": 0,
+      "id": "587d6654-a7df-42ae-b0f4-9fd4059f8ed1",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

@@ -1,0 +1,209 @@
+{
+  "id": "a3ec96e3-c48a-4c29-99c0-866db28023ed",
+  "name": "Auction.TradeMe.Ask",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "auction",
+          "dataType": "@auction",
+          "isList": true,
+          "required": true,
+          "prompts": [],
+          "value": "$auction",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "bidType-TradeMeAuction",
+          "dataType": "@bidType-TradeMeAuction",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$bidType-TradeMeAuction",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Nice! Good luck with your bid. Here's how you do it. Go to MY ACCOUNT, and select ACCOUNT DETAILS – Edit. You will then see the LINK MY TRADE ME ACCOUNT button below /n  Alternatively, if you click on the BID or BUY NOW button in an online auction you will be prompted to link your account.\n\nIs there anything else I can do for you??"
+          ]
+        },
+        {
+          "type": "custom_payload",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "type": "accordion",
+                  "subtitle": "Trade me",
+                  "title": "Turners Trade Me Auction",
+                  "image": {
+                    "src": "/TurnersTradeMeAuction.jpg"
+                  },
+                  "text": "Accordion text"
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "i want to ",
+          "userDefined": false
+        },
+        {
+          "text": "bid",
+          "userDefined": false,
+          "alias": "auction",
+          "meta": "@auction"
+        },
+        {
+          "text": " on ",
+          "userDefined": false
+        },
+        {
+          "text": "trade me",
+          "userDefined": false,
+          "alias": "bidType-TradeMeAuction",
+          "meta": "@bidType-TradeMeAuction"
+        }
+      ],
+      "count": 0,
+      "id": "6d50e31b-b050-47ec-ac77-6b4466037341",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "bidding",
+          "userDefined": false,
+          "alias": "auction",
+          "meta": "@auction"
+        },
+        {
+          "text": " on ",
+          "userDefined": false
+        },
+        {
+          "text": "trade me",
+          "userDefined": true,
+          "alias": "bidType-TradeMeAuction",
+          "meta": "@bidType-TradeMeAuction"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "auction",
+          "userDefined": false,
+          "alias": "auction",
+          "meta": "@auction"
+        }
+      ],
+      "count": 0,
+      "id": "d3c749a3-1f17-4822-add6-66e2035d7155",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I would like to ",
+          "userDefined": false
+        },
+        {
+          "text": "bid",
+          "userDefined": false,
+          "alias": "auction",
+          "meta": "@auction"
+        },
+        {
+          "text": " on ",
+          "userDefined": false
+        },
+        {
+          "text": "trade me auction",
+          "userDefined": true,
+          "alias": "bidType-TradeMeAuction",
+          "meta": "@bidType-TradeMeAuction"
+        }
+      ],
+      "count": 0,
+      "id": "f0af605e-12bb-48de-9b89-06f6b181d90e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "How can I ",
+          "userDefined": false
+        },
+        {
+          "text": "bid",
+          "userDefined": false,
+          "alias": "auction",
+          "meta": "@auction"
+        },
+        {
+          "text": " on ",
+          "userDefined": false
+        },
+        {
+          "text": "Turners Trade Me auctions",
+          "userDefined": true,
+          "alias": "bidType-TradeMeAuction",
+          "meta": "@bidType-TradeMeAuction"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "418e4519-ff8c-4db9-8211-3aba6d45b01c",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

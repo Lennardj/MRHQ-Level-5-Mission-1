@@ -1,0 +1,120 @@
+{
+  "id": "48c891a0-9055-4488-a746-a29944a6f370",
+  "name": "AutoBid.General.ask",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "AutoBidGeneralask-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "AutoBid",
+          "dataType": "@AutoBid",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$AutoBid",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Auto bid will place bids at the next minimum amount up to your maximum, if you are outbid.\n\n\nIf the reserve has not been met and your autobid exceeds the reserve, a bid will be placed at the reserve amount. \n\n\nAre you trying to find out  more about how to place an autobid?"
+          ]
+        },
+        {
+          "type": "custom_payload",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "options": [
+                    {
+                      "link": "https://www.turners.co.nz/Cars/how-to-buy/Online-auctions/Autobids/",
+                      "text": "More on AutoBid",
+                      "image": {
+                        "src": {
+                          "rawUrl": "../images/SM/Facebook.png"
+                        }
+                      }
+                    }
+                  ],
+                  "type": "chips"
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What's an ",
+          "userDefined": false
+        },
+        {
+          "text": "autobid",
+          "userDefined": true,
+          "alias": "AutoBid",
+          "meta": "@AutoBid"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "4a117cb8-c3a6-4f5d-9c5d-99ea59c1fa0c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "autobid",
+          "userDefined": true,
+          "alias": "AutoBid",
+          "meta": "@AutoBid"
+        }
+      ],
+      "count": 0,
+      "id": "825c3980-fc33-4c86-b954-b2f902a5ba59",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

@@ -1,0 +1,151 @@
+{
+  "id": "a9e52539-e85d-4a9e-9495-9f9d768a4048",
+  "name": "ScreenName.General.Ask",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "ScreenNameGeneralAsk-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "ScreenName",
+          "dataType": "@ScreenName",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$ScreenName",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Your screen name is displayed next to your bid. \n\nDo you want to know about Turners or Trade Me screen name?"
+          ]
+        },
+        {
+          "type": "custom_payload",
+          "condition": "",
+          "payload": {
+            "input": {
+              "level": "5",
+              "set_conversation_rating": true,
+              "type": "star-rating"
+            },
+            "platform": "ZOHOSALESIQ",
+            "replies": [
+              "Rate the chat session that you had with Zyt"
+            ]
+          }
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Where is my ",
+          "userDefined": false
+        },
+        {
+          "text": "screen name",
+          "userDefined": false,
+          "alias": "ScreenName",
+          "meta": "@ScreenName"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "fcdb1070-6538-4431-a5c4-558ae229ba00",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "screenname",
+          "userDefined": true,
+          "alias": "ScreenName",
+          "meta": "@ScreenName"
+        }
+      ],
+      "count": 0,
+      "id": "0babb438-d018-49a1-9dc4-a7c779fa6910",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "screen name",
+          "userDefined": true,
+          "alias": "ScreenName",
+          "meta": "@ScreenName"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "1ebcd35b-a6a9-4de4-80b1-c45ced0e78b2",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What's a ",
+          "userDefined": false
+        },
+        {
+          "text": "screen name",
+          "userDefined": true,
+          "alias": "ScreenName",
+          "meta": "@ScreenName"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "0779f03c-5c13-41eb-a3fd-83edcd247aa3",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

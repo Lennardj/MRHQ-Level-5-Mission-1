@@ -1,0 +1,117 @@
+{
+  "id": "03aec8bc-28d7-48c1-8413-5b55dd5cd431",
+  "name": "Account.Turnerslive",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "turners-live",
+          "dataType": "@Turners-live",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$turners-live",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Turners Live allows you to bid on live auctions that are taking place physically and are run by an auctioneer in front of customers.\n\nIs there anything else I can do for you??"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "trying to find out about ",
+          "userDefined": false
+        },
+        {
+          "text": "turners live",
+          "userDefined": false,
+          "alias": "turners-live",
+          "meta": "@Turners-live"
+        }
+      ],
+      "count": 0,
+      "id": "0bcd41d6-3d7e-4274-8a42-500ec8b3e3d6",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "can you tell me what is ",
+          "userDefined": false
+        },
+        {
+          "text": "turners live",
+          "userDefined": false,
+          "alias": "turners-live",
+          "meta": "@Turners-live"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "50872d69-49e3-4600-8a6f-2c1d12eddd04",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What is ",
+          "userDefined": false
+        },
+        {
+          "text": "Turners Live",
+          "userDefined": false,
+          "alias": "turners-live",
+          "meta": "@Turners-live"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "a37e5fd4-827e-44fc-8d23-64890eb5dcff",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

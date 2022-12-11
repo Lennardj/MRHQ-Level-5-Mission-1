@@ -1,0 +1,150 @@
+{
+  "id": "df4f1032-6a1a-4d6c-8cf7-a46d449792e0",
+  "name": "Account.general.Ask",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "AccountgeneralAsk-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "Accounts",
+          "dataType": "@Accounts",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$Accounts",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "So, you have an account enquiry about accounts, \n\nAre you interested in knowing about linking your Trade me and Turners accounts?"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I will like to make changes to my ",
+          "userDefined": false
+        },
+        {
+          "text": "account",
+          "userDefined": true,
+          "alias": "Accounts",
+          "meta": "@Accounts"
+        }
+      ],
+      "count": 0,
+      "id": "b516eae9-08db-4ce2-9771-794ce742048f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I need to know about my ",
+          "userDefined": false
+        },
+        {
+          "text": "accounts",
+          "userDefined": true,
+          "alias": "Accounts",
+          "meta": "@Accounts"
+        }
+      ],
+      "count": 0,
+      "id": "8872250f-8e56-4dac-ad4e-2e549dd12c84",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "what's my ",
+          "userDefined": false
+        },
+        {
+          "text": "turners account",
+          "userDefined": true,
+          "alias": "Accounts",
+          "meta": "@Accounts"
+        }
+      ],
+      "count": 0,
+      "id": "e4c4b3f7-5391-4838-abf9-a30c647b5302",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "what's my ",
+          "userDefined": false
+        },
+        {
+          "text": "trade me account",
+          "userDefined": true,
+          "alias": "Accounts",
+          "meta": "@Accounts"
+        }
+      ],
+      "count": 0,
+      "id": "739005c7-2f78-4fe0-92d6-8978c67f1f05",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I want to know about my ",
+          "userDefined": false
+        },
+        {
+          "text": "accounts",
+          "userDefined": true,
+          "alias": "Accounts",
+          "meta": "@Accounts"
+        }
+      ],
+      "count": 0,
+      "id": "9c3cef04-b548-465a-a597-80fe4a204328",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

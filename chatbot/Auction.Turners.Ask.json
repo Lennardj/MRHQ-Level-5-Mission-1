@@ -1,0 +1,133 @@
+{
+  "id": "da063a53-e2ca-4c71-bd8c-a45bbe197441",
+  "name": "Auction.Turners.Ask",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "AuctionTurnersAsk-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "auction",
+          "dataType": "@auction",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$auction",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "bidtype-turnersauction",
+          "dataType": "@bidType-TurnersAuction",
+          "isList": true,
+          "required": true,
+          "prompts": [],
+          "value": "$bidtype-turnersauction",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Thanks for the enquiry, Please let me know which description best suit you.\"Private customers & companies\" or \"Registered Motor Vehicle Traders, Licensed Second-hand Dealers & Licensed Dismantlers\""
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "i want to ",
+          "userDefined": false
+        },
+        {
+          "text": "auction",
+          "userDefined": true,
+          "alias": "auction",
+          "meta": "@auction"
+        },
+        {
+          "text": " on ",
+          "userDefined": false
+        },
+        {
+          "text": "turrners",
+          "userDefined": false,
+          "alias": "bidtype-turnersauction",
+          "meta": "@bidType-TurnersAuction"
+        }
+      ],
+      "count": 0,
+      "id": "bd14d6dc-82b6-4c7f-85ac-871d1193a16a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "How can I ",
+          "userDefined": false
+        },
+        {
+          "text": "bid",
+          "userDefined": false,
+          "alias": "auction",
+          "meta": "@auction"
+        },
+        {
+          "text": " on ",
+          "userDefined": false
+        },
+        {
+          "text": "Turners Online Auctions",
+          "userDefined": false,
+          "alias": "bidtype-turnersauction",
+          "meta": "@bidType-TurnersAuction"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "1546b08a-b10a-43a8-a15c-fe2a0f58d789",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

@@ -1,0 +1,121 @@
+{
+  "id": "e6eff13c-c76d-4e22-ae1e-f13ae8814d3f",
+  "name": "Payment.options",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "Payment-options",
+          "dataType": "@Payment-options",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$Payment-options",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Payment options will vary, but are likely to include; direct credit, cash, EFTPOS, Visa or Mastercard*.\n\nOur standard terms are that funds need to clear before goods can be released.\n\n*Please note that we charge an extra 2% on all Paywave, Alipay and credit card transactions. We are unable to accept cheques."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Do you accept ",
+          "userDefined": false
+        },
+        {
+          "text": "direct credit",
+          "userDefined": true,
+          "alias": "Payment-options",
+          "meta": "@Payment-options"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "c76d2f63-c32b-4aff-9473-4f694c3028b1",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Do you accept direct credit, ",
+          "userDefined": false
+        },
+        {
+          "text": "cash",
+          "userDefined": true,
+          "alias": "Payment-options",
+          "meta": "@Payment-options"
+        },
+        {
+          "text": ", EFTPOS, Visa or Mastercard?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e94799f3-5325-4178-bfb3-0ff064540a63",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What ",
+          "userDefined": false
+        },
+        {
+          "text": "payment options",
+          "userDefined": true,
+          "alias": "Payment-options",
+          "meta": "@Payment-options"
+        },
+        {
+          "text": " are there?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b07873b7-313b-496d-b4df-b10de5cc1e1c",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

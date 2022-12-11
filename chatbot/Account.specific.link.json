@@ -1,0 +1,166 @@
+{
+  "id": "b214cf34-a35b-4633-b72d-eeb72f7379e3",
+  "name": "Account.specific.link",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "accounts",
+          "dataType": "@Accounts",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$accounts",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "bidtype-trademeauction",
+          "dataType": "@bidType-TradeMeAuction",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$bidtype-trademeauction",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "This is because our Turners Trade Me Auctions are held in partnership with Trade Me, you need to link your Turners account to Trade Me to be able to bid or Buy Now.\n\nYou do not need to link your account to Trade Me for Turners Online Auctions.\n\nIs there anything else I can do for you??"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "is linking my ",
+          "userDefined": false
+        },
+        {
+          "text": "accounts",
+          "userDefined": false,
+          "alias": "accounts",
+          "meta": "@Accounts"
+        },
+        {
+          "text": " good?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ddf11d8b-7317-4528-b990-eedb1f1cc728",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "should i link my ",
+          "userDefined": false
+        },
+        {
+          "text": "accounts",
+          "userDefined": false,
+          "alias": "accounts",
+          "meta": "@Accounts"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "04e70f01-a780-4c18-837d-56c684787650",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "do i need to link my ",
+          "userDefined": false
+        },
+        {
+          "text": "accounts",
+          "userDefined": false,
+          "alias": "accounts",
+          "meta": "@Accounts"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "0d189230-3bac-446c-95b5-e48ce2926475",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Why do I need to link my ",
+          "userDefined": false
+        },
+        {
+          "text": "Turners account",
+          "userDefined": false,
+          "alias": "accounts",
+          "meta": "@Accounts"
+        },
+        {
+          "text": " to ",
+          "userDefined": false
+        },
+        {
+          "text": "Trade Me",
+          "userDefined": false,
+          "alias": "bidtype-trademeauction",
+          "meta": "@bidType-TradeMeAuction"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "8b1b82a6-7e6b-4468-a006-e4fc3fe663c6",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

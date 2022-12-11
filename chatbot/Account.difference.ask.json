@@ -1,0 +1,165 @@
+{
+  "id": "a802a6f7-a698-49f0-ad9c-f4837c156e5b",
+  "name": "Account.difference.ask",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "Accountdifferenceask-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "Turners-live",
+          "dataType": "@Turners-live",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$Turners-live",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "Online-Auction",
+          "dataType": "@Online-Auction",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$Online-Auction",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Turners Live allows you to bid on live auctions that are taking place physically and are run by an auctioneer in front of customers.\n\nOnline auctions are only held online, there is no physical auction or auctioneer. The customers are all online.\n\nIs there anything else I can do for you??"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "turners live",
+          "userDefined": true,
+          "alias": "Turners-live",
+          "meta": "@Turners-live"
+        },
+        {
+          "text": " and ",
+          "userDefined": false
+        },
+        {
+          "text": "online auction",
+          "userDefined": true,
+          "alias": "Online-Auction",
+          "meta": "@Online-Auction"
+        },
+        {
+          "text": " difference",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "09154496-f3e6-4c16-876a-fa804fde818a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Is there a difference between ",
+          "userDefined": false
+        },
+        {
+          "text": "turners live",
+          "userDefined": true,
+          "alias": "Turners-live",
+          "meta": "@Turners-live"
+        },
+        {
+          "text": " and ",
+          "userDefined": false
+        },
+        {
+          "text": "online auction",
+          "userDefined": true,
+          "alias": "Online-Auction",
+          "meta": "@Online-Auction"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "27d77d83-de9d-4634-bb6f-500ffa8f6485",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What's the difference between ",
+          "userDefined": false
+        },
+        {
+          "text": "online auctions",
+          "userDefined": true,
+          "alias": "Online-Auction",
+          "meta": "@Online-Auction"
+        },
+        {
+          "text": " and ",
+          "userDefined": false
+        },
+        {
+          "text": "Turners live",
+          "userDefined": true,
+          "alias": "Turners-live",
+          "meta": "@Turners-live"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "5552bd27-4cff-4f77-aaaf-9cbdfb77f03f",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

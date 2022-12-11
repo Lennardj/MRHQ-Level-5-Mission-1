@@ -1,0 +1,164 @@
+{
+  "id": "ad2ff55c-57d9-4966-aa7f-de95490f7f98",
+  "name": "Auction.general.ask",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "Auction-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "auction",
+          "dataType": "@auction",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$auction",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Thanks for your enquire! Do you want to bid on Trade me or Turners online?"
+          ]
+        },
+        {
+          "type": "custom_payload",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "type": "button",
+                  "icon": {
+                    "color": "#FF9800",
+                    "type": "chevron_right"
+                  },
+                  "event": {
+                    "parameters": {},
+                    "languageCode": "",
+                    "name": ""
+                  },
+                  "text": "Go to Turners FAQ",
+                  "link": "https://www.turners.co.nz/FAQs-Cars/"
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I want to take part in the ",
+          "userDefined": false
+        },
+        {
+          "text": "auction",
+          "userDefined": true,
+          "alias": "auction",
+          "meta": "@auction"
+        }
+      ],
+      "count": 0,
+      "id": "d63250de-9e47-4e17-936d-4cb49cdffc08",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I 'll like to place a ",
+          "userDefined": false
+        },
+        {
+          "text": "bid",
+          "userDefined": true,
+          "alias": "auction",
+          "meta": "@auction"
+        }
+      ],
+      "count": 0,
+      "id": "8a3d45d7-f78a-48aa-b481-8799ea793742",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I want to ",
+          "userDefined": false
+        },
+        {
+          "text": "bid",
+          "userDefined": true,
+          "alias": "auction",
+          "meta": "@auction"
+        },
+        {
+          "text": " online",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "c155f643-7c8e-48f0-b38e-fb255cba6cc0",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "How can I ",
+          "userDefined": false
+        },
+        {
+          "text": "bid",
+          "userDefined": true,
+          "alias": "auction",
+          "meta": "@auction"
+        },
+        {
+          "text": " online?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "370ef929-eae4-466a-96d2-43e48608910b",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

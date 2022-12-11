@@ -1,0 +1,128 @@
+{
+  "id": "9207fef8-ccb6-4678-9465-936c4ac14995",
+  "name": "Autobid.How.ask",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "autobid",
+          "dataType": "@AutoBid",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$autobid",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "How do I place an autobid?\n\n1)      Specify the maximum you want to bid in the box\n2)      Tick the autobid box - MY BID (on the left hand side) will then change to MY MAXIMUM BID\n3)      Click AUTOBID\n\nSee Image.\n\nIs there anything else I can help you with??"
+          ]
+        },
+        {
+          "type": "custom_payload",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "type": "image",
+                  "accessibilityText": "How to Image",
+                  "rawUrl": "/Autobid.jpg"
+                },
+                {
+                  "icon": {
+                    "type": "chevron_right",
+                    "color": "#FF9800"
+                  },
+                  "link": "https://www.turners.co.nz/Cars/how-to-buy/Online-auctions/Autobids/",
+                  "text": "Click for more info",
+                  "type": "button",
+                  "event": {
+                    "parameters": {},
+                    "languageCode": "",
+                    "name": ""
+                  }
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "How to ",
+          "userDefined": false
+        },
+        {
+          "text": "autobid",
+          "userDefined": false,
+          "alias": "autobid",
+          "meta": "@AutoBid"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "c077f54a-bd45-4374-af0e-4076f88f3d5c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "How do I place an ",
+          "userDefined": false
+        },
+        {
+          "text": "autobid",
+          "userDefined": false,
+          "alias": "autobid",
+          "meta": "@AutoBid"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "6ccf294d-2758-4077-95ed-b1399e4a9ecc",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}
